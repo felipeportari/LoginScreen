@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <checkstyle version="8.45.1">
-<file name="C:\xampp\htdocs\facens\LoginScreen\src\main\java\junit\LoginScreen.java">
+<file name="C:\xampp\htdocs\LoginScreen-Pom\src\main\java\junit\LoginScreen.java">
 <error line="1" severity="error" message="O arquivo não termina com uma linha em branco." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
 <error line="4" column="1" severity="error" message="&apos;import&apos; é precedido por mais do que 1 linha vazia." source="com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"/>
 <error line="12" severity="error" message="A primeira frase deve acabar num ponto final." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"/>
@@ -30,7 +30,7 @@
 <error line="58" column="17" severity="error" message="O filho de &apos;method def&apos; está no nível de indentação incorreto de 16. O nível esperado era o 8." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
 <error line="59" column="9" severity="error" message="&apos;method def rcurly&apos; tem um nível de indentação incorreto de 8. O nível esperado era o 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
 </file>
-<file name="C:\xampp\htdocs\facens\LoginScreen\src\test\java\junit\LoginScreenTest.java">
+<file name="C:\xampp\htdocs\LoginScreen-Pom\src\test\java\junit\LoginScreenTest.java">
 <error line="1" severity="error" message="O arquivo não termina com uma linha em branco." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
 <error line="6" column="1" severity="error" message="Ordem errada para a importação &apos;org.junit.jupiter.api.Test&apos;." source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
 <error line="8" column="1" severity="error" message="Importação redundante do mesmo pacote - junit.LoginScreen." source="com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheck"/>
