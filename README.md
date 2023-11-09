@@ -1,22 +1,24 @@
-# LoginScreen TDD
+# LoginScreen - Resumo
 
 ## Descrição
-
-A classe `LoginScreen` foi desenvolvida para autenticar usuários com simulação de consulta no banco de dados. Os testes foram criados usando a biblioteca JUnit 5.
+A classe `LoginScreen` permite autenticar usuários simulando um banco de dados de usuários. Ela oferece funcionalidades para autenticação e adição de novos usuários.
 
 ## Funcionalidades
+- **Construtor (`LoginScreen()`):** Inicializa uma instância da classe e configura um banco de dados de exemplo com usuários predefinidos.
 
-- **Construtor:** Inicializa uma nova instância da classe `LoginScreen` e configura o banco de dados do usuário.
+- **Método `login(String username, String password)`:** Tenta autenticar um usuário com base no nome de usuário e senha fornecidos. Retorna verdadeiro se a autenticação for bem-sucedida e falso caso contrário.
 
-- **Método `login(String username, String password)`:** Realiza a consulta das credenciais fornecidas no banco de dados.
+- **Método `addUser(String username, String password)`:** Adiciona um novo usuário ao banco de dados. Observação: Este método não é recomendado para uso em um ambiente de produção devido à falta de medidas de segurança.
 
-- **Método `addUser(String username, String password)`:** Permite adicionar um novo usuário ao banco de dados.
+## Uso
+A classe `LoginScreen` é útil para demonstrações e testes de autenticação de usuários, mas não deve ser usada em ambientes de produção devido a questões de segurança.
 
-## Requisitos
+### Exemplo de Uso
+```java
+LoginScreen loginScreen = new LoginScreen();
 
-Para utilizar o projeto e executar os testes, é necessário ter Java e Maven instalados na máquina.
+// Autenticar um usuário
+boolean isAuthenticated = loginScreen.login("john", "password123");
 
-## Testes
-
-Foram criados testes unitários automatizados com JUnit 5 para garantir o correto funcionamento da classe.
-
+// Adicionar um novo usuário (não recomendado para produção)
+loginScreen.addUser("newuser", "newpassword");
